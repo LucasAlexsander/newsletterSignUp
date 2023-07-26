@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100dvh;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  display: grid;
+  place-items: center;
+}
+
+main, .send {
+  max-width: 928px;
+  min-height: 639px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .banner {
+  background: url('assets/images/illustration-sign-up-desktop.svg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+}
+
+.send {
+  max-width: 504px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.send>img {
+  max-width: 4rem;
+  height: 4rem;
+
+}
+
+.send h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.send p {
+  line-height: 147.2%;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: block;
+  }
+
+  main {
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    padding: 0;
+    gap: 0px;
+  }
+
+  main .banner {
+    background: url('assets/images/illustration-sign-up-mobile.svg') no-repeat;
+    height: 284px;
+    background-size: cover;
+    order: -1;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .send {
+    position: relative;
+    min-height: 100dvh;
+    border-radius: 0;
+  }
+
+  .send>:last-child {
+    margin-top: 140px;
+  }
+}

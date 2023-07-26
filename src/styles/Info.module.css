@@ -1,0 +1,31 @@
+.info {
+  margin: 77px 0;
+  max-width: 100%;
+  padding: 0 40px;
+  color: #232742;
+}
+
+.info h1 {
+  font-size: 56px;
+  margin-bottom: 37px;
+}
+
+.info>p {
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (max-width: 800px) {
+  .info {
+    margin: 40px 0;
+  }
+
+  .info h1 {
+    font-size: 46px;
+  }
+}
